@@ -30,14 +30,28 @@ p {
 
 @media(max-width: 768px) {
     .hero__text {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .hero__subtitle {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .hero__title {
-        font-size: 1.7rem;
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 576px) {
+    .hero__text {
+        font-size: .6rem;
+    }
+
+    .hero__title {
+        font-size: 1.4rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1rem;
     }
 }
