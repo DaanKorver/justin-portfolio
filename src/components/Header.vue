@@ -19,7 +19,7 @@
         <span class="hamburger-line"></span>
       </div>
 
-      <div class="overlay">
+      <div class="overlay" v-bind:class="{overlay__open: hamburgerOpen}">
         <ul class="overlay__list">
           <li><a href="#">Works</a></li>
           <li><a href="#">About</a></li>
@@ -180,7 +180,7 @@ header {
       }
     }
 
-    .overlay.active {
+    .overlay__open {
       transform: translateX(0%);
     }
   }
