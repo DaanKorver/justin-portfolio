@@ -1,10 +1,10 @@
 <template>
   <header>
-    <h3 class="logo">Portfolio</h3>
+    <h3 class="logo"><a href="#">Portfolio</a></h3>
     <nav class="nav">
       <ul class="nav__list">
         <li><a href="#work">Works</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -55,6 +55,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $tertiary;
 }
 
 header {

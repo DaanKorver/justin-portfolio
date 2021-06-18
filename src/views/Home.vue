@@ -45,21 +45,27 @@
         </h3>
       </div>
       <div class="about-text-container">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo impedit
-        molestias nulla cum dignissimos incidunt nobis cumque, ex consectetur
-        tenetur consequuntur esse exercitationem accusamus facere quam eum
-        cupiditate nam illum neque dolorem ab rem quaerat! Officia odio quas
-        nisi temporibus pariatur dolorum consequatur obcaecati accusantium
-        quasi!
-        <br /><br />
-        Deleniti reprehenderit voluptatem assumenda! Lorem ipsum dolor sit amet
-        consectetur, adipisicing elit. Blanditiis, cupiditate. Animi quas illo,
-        mollitia velit excepturi nesciunt voluptatibus nihil distinctio nobis
-        sit, quibusdam at quasi quidem tempora? Quia temporibus ea, aut cum quae
-        esse sint, tempora aperiam rerum consectetur illo modi nesciunt
-        assumenda est eligendi obcaecati quam dignissimos, porro architecto!
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo impedit
+          molestias nulla cum dignissimos incidunt nobis cumque, ex consectetur
+          tenetur consequuntur esse exercitationem accusamus facere quam eum
+          cupiditate nam illum neque dolorem ab rem quaerat! Officia odio quas
+          nisi temporibus pariatur dolorum consequatur obcaecati accusantium
+          quasi!
+        </p>
+        <br />
+        <p>
+          Deleniti reprehenderit voluptatem assumenda! Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Blanditiis, cupiditate. Animi quas
+          illo, mollitia velit excepturi nesciunt voluptatibus nihil distinctio
+          nobis sit, quibusdam at quasi quidem tempora? Quia temporibus ea, aut
+          cum quae esse sint, tempora aperiam rerum consectetur illo modi
+          nesciunt assumenda est eligendi obcaecati quam dignissimos, porro
+          architecto!
+        </p>
       </div>
     </section>
+    <div id="contact"></div>
   </body>
 </template>
 
@@ -206,18 +212,29 @@ export default class Home extends Vue {}
   flex-direction: row;
   max-width: 1200px;
   margin: 10em auto;
-  padding: 1em;
 
   .container-heading {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    h3 {
+      padding: 0.5em;
+    }
   }
 
   .about-text-container {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    padding: 0 1.5em;
   }
 }
 
@@ -241,6 +258,10 @@ export default class Home extends Vue {}
 @media (max-width: 992px) {
   #about {
     flex-direction: column;
+
+    .container-heading {
+      align-items: flex-start;
+    }
   }
 }
 </style>
