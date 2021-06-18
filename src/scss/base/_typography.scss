@@ -38,6 +38,12 @@ p {
     font-weight: 300;
 }
 
+.about-heading {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
 @media(max-width: 768px) {
     .hero__text {
         font-size: .8rem;

@@ -19,7 +19,7 @@
         <span class="hamburger-line"></span>
       </div>
 
-      <div class="overlay" v-bind:class="{overlay__open: hamburgerOpen}">
+      <div class="overlay" v-bind:class="{ overlay__open: hamburgerOpen }">
         <ul class="overlay__list">
           <li><a href="#">Works</a></li>
           <li><a href="#">About</a></li>
@@ -63,6 +63,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  width: 90%;
 
   .menu__open {
     ul {
