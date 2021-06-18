@@ -3,7 +3,7 @@
     <h3 class="logo">Portfolio</h3>
     <nav class="nav">
       <ul class="nav__list">
-        <li><a href="#">Works</a></li>
+        <li><a href="#work">Works</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>

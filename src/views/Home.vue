@@ -1,48 +1,37 @@
 <template>
-  <div id="home">
-    <div class="image-container">
-      <img src="../assets/memoji.png" class="memoji" />
-    </div>
-    <div class="sub-hero-container">
-      <h3 class="hero__subtitle">Hi, I'm Justin 👋</h3>
-      <!-- <img src="assets/rock_emoji.png" class="rock-emoji"> -->
-    </div>
-    <h1 class="hero__title">
-      Building digital <br />
-      products, brands and <br />
-      experience.
-    </h1>
-    <p class="hero__text">
-      a Software Engineer. <br />
-      I specialize in UI/UX Design, Responsive Web Design, <br />
-      and Web Development.
-    </p>
-    <button class="cta">CONNECT WITH ME</button>
-  </div>
+  <body>
+    <section id="home">
+      <div class="sub-hero-container">
+        <h3 class="hero__subtitle">Hi, I'm Justin 👋</h3>
+      </div>
+      <h1 class="hero__title">
+        Building digital <br />
+        products, brands and <br />
+        experience.
+      </h1>
+      <button class="cta">CONNECT WITH ME</button>
+      <font-awesome-icon :icon="['fab', 'instagram']" />
+    </section>
+    <section id="work">
+      <div class="container-text">
+        <h3 class="work-title">Work</h3>
+        <p class="work-subtitle">Some of my work made with passion.</p>
+      </div>
+      <div class="work-container-top">
+        <div class="work-1 work">
+          <video src="../assets/work_1.mp4" type="video/mp4" autoplay muted></video>
+        </div>
+        <div class="work-2 work"></div>
+      </div>
+    </section>
+  </body>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import gsap from 'gsap'
+import gsap from "gsap";
 
-export default class Home extends Vue {
-  setup() {
-    const beforeEnter = (el: any) => {
-      console.log('before enter - set initial state')
-      el.style.transform = 'translateY(-60px)'
-      el.style.opacity = 0;
-    }
-
-    const enter = (el: any) => {
-      // el.style.opacity = 1;
-      console.log('starting to enter - make transition')
-      gsap.to(el, {
-        y: 0,
-        opacity: 1,
-      })
-    }
-  }
-}
+export default class Home extends Vue {}
 </script>
 
 <style lang="scss">
@@ -52,8 +41,6 @@ export default class Home extends Vue {
 
 #home {
   height: 80vh;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +49,7 @@ export default class Home extends Vue {
 
   .image-container {
     width: 30%;
-    height: 20%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,10 +71,6 @@ export default class Home extends Vue {
     .hero__subtitle {
       margin: 0 0.5em;
     }
-
-    img {
-      max-width: 30px;
-    }
   }
 
   .hero__title {
@@ -100,6 +83,68 @@ export default class Home extends Vue {
 
   .cta {
     margin-top: 2em;
+  }
+}
+
+#work {
+  height: auto;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .container-text {
+    margin: 2em .8em;
+  }
+
+  .work-container-top {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: .8em;
+    height: 900px;
+
+    .work {
+      border-radius: 10px;
+    }
+
+    .work-1 {
+      background: rgb(245, 230, 255);
+      flex: 1;
+      height: 450px;
+
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .work-2 {
+      background: rgb(245, 230, 255);
+      flex: 2;
+      height: 450px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    height: 70vh;
+  }
+
+  .work-container-top {
+    display: flex;
+    flex-direction: column !important;
+
+    .work-1 {
+      background: blue;
+      flex: 1;
+    }
+
+    .work-2 {
+      flex: 1;
+      background: purple;
+    }
   }
 }
 </style>

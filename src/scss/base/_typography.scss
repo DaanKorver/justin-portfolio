@@ -28,6 +28,16 @@ p {
     font-weight: 300;
 }
 
+.work-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.work-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
 @media(max-width: 768px) {
     .hero__text {
         font-size: .8rem;
@@ -39,6 +49,16 @@ p {
 
     .hero__title {
         font-size: 2rem;
+    }
+
+    .work-title {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .work-subtitle {
+        font-size: 1.3rem;
+        text-align: center;
     }
 }
 
