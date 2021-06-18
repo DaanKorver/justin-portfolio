@@ -114,7 +114,6 @@ header {
       width: 30px;
       height: 18px;
       display: none;
-      margin-left: auto;
       cursor: pointer;
 
       .hamburger-line {
@@ -194,6 +193,7 @@ header {
 }
 
 @media (max-width: 768px) {
+
   header .logo {
     margin-left: 0;
   }

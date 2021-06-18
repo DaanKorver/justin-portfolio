@@ -1,6 +1,7 @@
 <template>
   <body>
     <section id="home">
+      <fa icon="coffee" />
       <div class="sub-hero-container">
         <h3 class="hero__subtitle">Hi, I'm Justin 👋</h3>
       </div>
@@ -18,14 +19,7 @@
         <p class="work-subtitle">Some of my work made with passion.</p>
       </div>
       <div class="work-container-top">
-        <div class="work-1 work">
-          <video
-            src="../assets/work_1.mp4"
-            type="video/mp4"
-            autoplay
-            muted
-          ></video>
-        </div>
+        <div class="work-1 work"></div>
         <div class="work-2 work"></div>
       </div>
       <div class="work-container-middle">
@@ -155,7 +149,7 @@ export default class Home extends Vue {}
     margin: 0.8em;
 
     .work-1 {
-      background: rgb(245, 230, 255);
+      background: $workBackground;
       flex: 1;
       height: 450px;
 
@@ -166,7 +160,7 @@ export default class Home extends Vue {}
     }
 
     .work-2 {
-      background: rgb(245, 230, 255);
+      background: $workBackground;
       flex: 2;
       height: 450px;
     }
@@ -179,13 +173,13 @@ export default class Home extends Vue {}
     margin: 1em 0.8em;
 
     .work-3 {
-      background: rgb(245, 230, 255);
+      background: $workBackground;
       flex: 1;
       height: 450px;
     }
 
     .work-4 {
-      background: rgb(245, 230, 255);
+      background: $workBackground;
       flex: 1;
       height: 450px;
     }
@@ -197,7 +191,7 @@ export default class Home extends Vue {}
     margin: 1em 0.8em;
 
     .work-5 {
-      background: rgb(245, 230, 255);
+      background-color: $workBackground;
       flex: 1;
       height: 450px;
     }
@@ -234,7 +228,7 @@ export default class Home extends Vue {}
   }
 
   p {
-    padding: 0 1.5em;
+    padding: 0 1em;
   }
 }
 
@@ -258,6 +252,7 @@ export default class Home extends Vue {}
 @media (max-width: 992px) {
   #about {
     flex-direction: column;
+    margin: 5em auto;
 
     .container-heading {
       align-items: flex-start;
