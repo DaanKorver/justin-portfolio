@@ -45,11 +45,13 @@
 @import "@/scss/base/_global.scss";
 @import "@/scss/base/_typography.scss";
 footer {
-  background-color: transparent;
+  background-image: linear-gradient(360deg, #000000 0%, #013e66 150%);
+  
   width: 100%;
   height: auto;
 
   .footer-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 0 auto;
