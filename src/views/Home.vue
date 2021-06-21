@@ -1,7 +1,6 @@
 <template>
   <div>
     <section id="home">
-      <fa icon="coffee" />
       <div class="sub-hero-container">
         <h3 class="hero__subtitle">Hi, I'm Justin 👋</h3>
       </div>
