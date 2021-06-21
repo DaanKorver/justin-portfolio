@@ -1,7 +1,7 @@
 <template>
   <div>
+    <ProjectInfo :projectTitle="title" :projectDescription="description" :image="image" v-show="infoOpen" @closeInfo="closeInfo"/>
     <section id="home">
-      <fa icon="coffee" />
       <div class="sub-hero-container">
         <h3 class="hero__subtitle">Hi, I'm Justin 👋</h3>
       </div>
@@ -18,15 +18,30 @@
         <p class="work-subtitle">Some of my work made with passion.</p>
       </div>
       <div class="work-container-top">
-        <div class="work-1 work"></div>
-        <div class="work-2 work"></div>
+        <div class="work-1 work" @click="openInfo(
+          'My Custom Title',
+          'My cool description',
+          'logo.png')"></div>
+        <div class="work-2 work" @click="openInfo(
+          'My Custom Title two',
+          'My cool description two',
+          'memoji.png')"></div>
       </div>
       <div class="work-container-middle">
-        <div class="work-3 work"></div>
-        <div class="work-4 work"></div>
+        <div class="work-3 work" @click="openInfo(
+          'My Custom Title',
+          'My cool description',
+          'logo.png')"></div>
+        <div class="work-4 work" @click="openInfo(
+          'My Custom Title two',
+          'My cool description two',
+          'memoji.png')"></div>
       </div>
       <div class="work-container-bottom">
-        <div class="work-5 work"></div>
+        <div class="work-5 work" @click="openInfo(
+          'My Custom Title',
+          'My cool description',
+          'logo.png')"></div>
       </div>
     </section>
     <section id="about">
@@ -68,9 +83,34 @@
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
+import { Vue, Component } from "vue-property-decorator";
+import ProjectInfo from "./../components/ProjectInfo.vue"
 
-export default class Home extends Vue {}
+@Component({
+  components: {
+    ProjectInfo
+  }
+})
+
+export default class Home extends Vue {
+
+  private title = "";
+  private description = "";
+  private image = "";
+  private infoOpen = false;
+
+  openInfo(title:string, description:string, image:string) {
+    this.title = title
+    this.description = description
+    this.image = image
+    this.infoOpen = true
+  }
+
+  closeInfo() {
+    this.infoOpen = false
+  }
+
+}
 </script>
 
 <style lang="scss">
