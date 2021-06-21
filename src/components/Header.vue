@@ -6,7 +6,7 @@
         <li><a href="#work">Works</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="cta">Contact</a></li>
       </ul>
       <div
         class="hamburger-menu"
@@ -54,10 +54,7 @@ export default class Header extends Vue {
 
 header {
   padding: 2em;
-  display: flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -96,6 +93,9 @@ header {
 
       li:last-child {
         margin-right: 3em;
+        a {
+          color: $primary !important;
+        }
       }
     }
 

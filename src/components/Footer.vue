@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="footer">
     <div class="footer-container-1">
       <h3>Portfolio</h3>
     </div>
@@ -17,7 +17,11 @@
   </footer>
 </template>
 <style lang="scss">
-footer {
+@import "@/scss/abstracts/_variables.scss";
+@import "@/scss/abstracts/_mixins.scss";
+@import "@/scss/base/_global.scss";
+@import "@/scss/base/_typography.scss";
+.footer {
   background: black;
   height: 100%;
 }

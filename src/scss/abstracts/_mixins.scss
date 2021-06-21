@@ -1,5 +1,15 @@
-@mixin mq($size) {
-    @media(max-width: $size) {
-        @content;
-    }
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: row;
 }

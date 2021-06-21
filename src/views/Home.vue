@@ -11,7 +11,6 @@
         experience.
       </h1>
       <button class="cta">CONNECT WITH ME</button>
-      <font-awesome-icon :icon="['fab', 'instagram']" />
     </section>
     <section id="work">
       <div class="container-text">
@@ -59,7 +58,12 @@
         </p>
       </div>
     </section>
-    <!-- <div id="contact"></div> -->
+    <!-- <section id="contact">
+      <h3>Wanna have a talk?</h3>
+      <div class="contact-container">
+
+      </div>
+    </section> -->
   </div>
 </template>
 
@@ -73,21 +77,18 @@ export default class Home extends Vue {}
 @import "@/scss/base/_typography.scss";
 @import "@/scss/components/_buttons.scss";
 @import "@/scss/abstracts/_variables.scss";
+@import "@/scss/abstracts/_mixins.scss";
 
 #home {
   height: 100vh;
-  display: flex;
+  @include flexCenter;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 
   .image-container {
     width: 30%;
     height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter;
     margin-bottom: 1.25em;
 
     img {
@@ -99,9 +100,7 @@ export default class Home extends Vue {}
   }
 
   .sub-hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
 
     .hero__subtitle {
       margin: 0 0.5em;
@@ -142,8 +141,7 @@ export default class Home extends Vue {}
   }
 
   .work-container-top {
-    display: flex;
-    flex-direction: row;
+    @include flexRow;
     gap: 20px;
     margin: 0.8em;
 
@@ -151,11 +149,6 @@ export default class Home extends Vue {}
       background: $workBackground;
       flex: 1;
       height: 450px;
-
-      video {
-        width: 100%;
-        height: 100%;
-      }
     }
 
     .work-2 {
@@ -166,8 +159,7 @@ export default class Home extends Vue {}
   }
 
   .work-container-middle {
-    display: flex;
-    flex-direction: row;
+    @include flexRow;
     gap: 20px;
     margin: 1em 0.8em;
 
@@ -185,8 +177,7 @@ export default class Home extends Vue {}
   }
 
   .work-container-bottom {
-    display: flex;
-    flex-direction: row;
+    @include flexRow;
     margin: 1em 0.8em;
 
     .work-5 {
@@ -198,20 +189,15 @@ export default class Home extends Vue {}
 }
 
 #about {
+  @include flexRow;
   height: auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
   max-width: 1200px;
   margin: 10em auto;
 
   .container-heading {
-    flex: 1;
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
 
     h3 {
       padding: 0.5em;
@@ -220,15 +206,17 @@ export default class Home extends Vue {}
 
   .about-text-container {
     flex: 1;
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   p {
     padding: 0 1em;
   }
+}
+
+#contact {
+  height: auto;
 }
 
 @media (max-width: 768px) {
