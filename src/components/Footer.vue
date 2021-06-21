@@ -49,6 +49,18 @@ footer {
   
   width: 100%;
   height: auto;
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, .10);
+    z-index: 1;
+    transform: scale(1.05);
+    filter: blur(10px);
+  }
 
   .footer-wrapper {
     position: relative;
