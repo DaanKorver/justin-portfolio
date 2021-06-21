@@ -21,8 +21,8 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-@import '@/scss/abstracts/_variables.scss';
-@import '@/scss/abstracts/_mixins.scss';
-@import '@/scss/base/_global.scss';
-@import '@/scss/base/_typography.scss';
+@import "@/scss/abstracts/_variables.scss";
+@import "@/scss/abstracts/_mixins.scss";
+@import "@/scss/base/_global.scss";
+@import "@/scss/base/_typography.scss";
 </style>

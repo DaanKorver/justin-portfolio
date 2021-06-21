@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <div>
     <section id="home">
       <fa icon="coffee" />
       <div class="sub-hero-container">
@@ -59,13 +59,12 @@
         </p>
       </div>
     </section>
-    <div id="contact"></div>
-  </body>
+    <!-- <div id="contact"></div> -->
+  </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import gsap from "gsap";
+import { Vue } from "vue-property-decorator";
 
 export default class Home extends Vue {}
 </script>

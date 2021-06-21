@@ -21,10 +21,18 @@
 
       <div class="overlay" v-bind:class="{ overlay__open: hamburgerOpen }">
         <ul class="overlay__list">
-          <li><a href="#">Works</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#work" @click="hamburgerOpen = !hamburgerOpen">Works</a>
+          </li>
+          <li>
+            <a href="#about" @click="hamburgerOpen = !hamburgerOpen">About</a>
+          </li>
+          <li>
+            <a href="#" @click="hamburgerOpen = !hamburgerOpen">Services</a>
+          </li>
+          <li>
+            <a href="#" @click="hamburgerOpen = !hamburgerOpen">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -44,24 +52,6 @@ export default class Header extends Vue {
 @import "@/scss/base/_typography.scss";
 @import "@/scss/components/_buttons.scss";
 
-* {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: $primary;
-  color: $tertiary;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: $tertiary;
-}
-
 header {
   padding: 2em;
   display: flex;
@@ -69,7 +59,8 @@ header {
   justify-content: center;
   align-items: center;
   position: fixed;
-  width: 90%;
+  width: 100%;
+  z-index: 1000;
 
   .menu__open {
     ul {
@@ -80,7 +71,7 @@ header {
   .logo {
     font-size: 1.5rem;
     margin: auto auto 0 2.5em;
-    z-index: 100;
+    z-index: 1001;
   }
 
   .nav {
@@ -115,6 +106,7 @@ header {
       height: 18px;
       display: none;
       cursor: pointer;
+      z-index: 1001;
 
       .hamburger-line {
         width: 30px;
@@ -165,7 +157,7 @@ header {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 99;
+      z-index: 999;
 
       width: 100%;
       height: 100vh;
@@ -181,7 +173,7 @@ header {
 
         li {
           font-size: 2.5em;
-          margin-left: 0.5em;
+          margin-left: 1em;
         }
       }
     }
@@ -193,7 +185,6 @@ header {
 }
 
 @media (max-width: 768px) {
-
   header .logo {
     margin-left: 0;
   }

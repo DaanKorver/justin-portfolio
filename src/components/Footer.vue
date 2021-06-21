@@ -16,3 +16,9 @@
     <div class="footer-container-4"></div>
   </footer>
 </template>
+<style lang="scss">
+footer {
+  background: black;
+  height: 100%;
+}
+</style>

@@ -54,7 +54,7 @@ p {
     }
 
     .hero__title {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .work-title {
@@ -74,16 +74,16 @@ p {
     .about-text-container {}
 }
 
-@media(max-width: 576px) {
-    .hero__text {
-        font-size: .6rem;
-    }
+// @media(max-width: 576px) {
+//     .hero__text {
+//         font-size: .6rem;
+//     }
 
-    .hero__title {
-        font-size: 1.4rem;
-    }
+//     .hero__title {
+//         font-size: 1.4rem;
+//     }
 
-    .hero__subtitle {
-        font-size: 1rem;
-    }
-}
+//     .hero__subtitle {
+//         font-size: 1rem;
+//     }
+// }

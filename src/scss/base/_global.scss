@@ -1,16 +1,24 @@
 * {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
     background-color: $primary;
-    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 200%);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: $tertiary;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     flex-shrink: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $tertiary;
 }
 
 ul {
