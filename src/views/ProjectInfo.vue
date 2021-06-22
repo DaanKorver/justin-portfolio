@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss" scoped>
 div {
-  height: calc(100vh - 284px);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
