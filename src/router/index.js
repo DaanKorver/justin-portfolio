@@ -24,8 +24,8 @@ const routes = [
   {
     path: "/project/:id",
     name: "ProjectInfo",
-    component: ProjectInfo
-  }
+    component: ProjectInfo,
+  },
 ];
 
 const router = new VueRouter({

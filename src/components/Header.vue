@@ -41,12 +41,12 @@
 
 <script>
 export default {
-  data:()=>{
+  data: () => {
     return {
-      hamburgerOpen: false
-    }
-  }
-}
+      hamburgerOpen: false,
+    };
+  },
+};
 </script>
 <style lang="scss">
 @import "@/scss/abstracts/_variables.scss";

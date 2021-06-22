@@ -12,9 +12,9 @@ import Footer from "@/components/Footer.vue"; // @ is an alias to /src
 export default {
   components: {
     Header,
-    Footer
-  }
-}
+    Footer,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

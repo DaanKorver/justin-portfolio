@@ -46,7 +46,7 @@
 @import "@/scss/base/_typography.scss";
 footer {
   background-image: linear-gradient(360deg, #000000 0%, #013e66 150%);
-  
+
   width: 100%;
   height: auto;
   position: relative;
@@ -56,7 +56,7 @@ footer {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(255, 255, 255, .10);
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: 1;
     transform: scale(1.05);
     filter: blur(10px);
