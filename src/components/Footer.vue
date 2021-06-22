@@ -7,10 +7,10 @@
       <div class="footer-menu-container">
         <ul>
           <h4 class="footer-title">Menu</h4>
-          <li><a href="">Work</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-social-container">
