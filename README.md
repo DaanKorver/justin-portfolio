@@ -1,4 +1,4 @@
-# portfolio
+# justin-portfolio
 
 ## Project setup
 ```

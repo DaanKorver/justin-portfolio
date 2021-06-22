@@ -1,7 +1,6 @@
 <template>
-  <div>
+<div>
     <section id="home">
-      <fa icon="coffee" />
       <div class="sub-hero-container">
         <h3 class="hero__subtitle">Hi, I'm Justin 👋</h3>
       </div>
@@ -18,15 +17,15 @@
         <p class="work-subtitle">Some of my work made with passion.</p>
       </div>
       <div class="work-container-top">
-        <div class="work-1 work"></div>
-        <div class="work-2 work"></div>
+        <div class="work-1 work" @click="$router.push('/project/terminator')"></div>
+        <div class="work-2 work" @click="$router.push('/project/project2')"></div>
       </div>
       <div class="work-container-middle">
-        <div class="work-3 work"></div>
-        <div class="work-4 work"></div>
+        <div class="work-3 work" @click="$router.push('/project/project3')"></div>
+        <div class="work-4 work" @click="$router.push('/project/project4')"></div>
       </div>
       <div class="work-container-bottom">
-        <div class="work-5 work"></div>
+        <div class="work-5 work" @click="$router.push('/project/project5')"></div>
       </div>
     </section>
     <section id="about">
@@ -67,13 +66,13 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue } from "vue-property-decorator";
-
-export default class Home extends Vue {}
+<script>
+// @ is an alias to /src
+export default {
+}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/scss/base/_typography.scss";
 @import "@/scss/components/_buttons.scss";
 @import "@/scss/abstracts/_variables.scss";

@@ -39,11 +39,13 @@
   </header>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-@Component
-export default class Header extends Vue {
-  private hamburgerOpen = false;
+<script>
+export default {
+  data:()=>{
+    return {
+      hamburgerOpen: false
+    }
+  }
 }
 </script>
 <style lang="scss">
