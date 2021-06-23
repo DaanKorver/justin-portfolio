@@ -56,7 +56,6 @@ export default {
 @import "@/scss/base/_typography.scss";
 
 div {
-  @include flexCenter;
   width: 100%;
   height: 100%;
   #projectInfoTitle {
@@ -89,4 +88,3 @@ div {
     }
   }
 }
-</style>

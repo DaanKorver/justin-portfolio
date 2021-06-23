@@ -1,7 +1,10 @@
 <template>
   <div>
     <Header />
-    <router-view />
+    <transition name="fade" mode="out-in"
+      >'
+      <router-view />
+    </transition>
     <Footer />
   </div>
 </template>
@@ -22,8 +25,24 @@ export default {
 @import "@/scss/abstracts/_mixins.scss";
 @import "@/scss/base/_global.scss";
 @import "@/scss/base/_typography.scss";
+
 div {
   display: flex;
   flex-direction: column;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity transform;
+  transition-timing-function: ease;
+}
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.fade-leave-active {
+  opacity: 0;
+  transform: scale(0.95);
 }
 </style>

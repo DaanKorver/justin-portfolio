@@ -3,8 +3,9 @@ const projectManager = {
     terminator: {
       title: "Terminator",
       subtitle: "Mobile Skin",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi facere, quis provident nulla animi porro enim delectus, voluptatum magni velit distinctio odit consequuntur voluptas qui inventore veritatis suscipit error.",
-      image: ""
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi facere, quis provident nulla animi porro enim delectus, voluptatum magni velit distinctio odit consequuntur voluptas qui inventore veritatis suscipit error.",
+      image: "",
     },
     project2: {
       title: "title2",
