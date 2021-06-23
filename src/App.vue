@@ -1,12 +1,12 @@
 <template>
-    <div>
-      
-        <Header />
-        <transition name="fade" mode="out-in">'
-        <router-view />
-        </transition>
-        <Footer />
-    </div>
+  <div>
+    <Header />
+    <transition name="fade" mode="out-in"
+      >'
+      <router-view />
+    </transition>
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -33,17 +33,16 @@ div {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   transition-property: opacity transform;
   transition-timing-function: ease;
 }
-.fade-enter{
+.fade-enter {
   opacity: 0;
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 .fade-leave-active {
   opacity: 0;
-  transform: scale(.95);
+  transform: scale(0.95);
 }
-
 </style>
