@@ -64,6 +64,7 @@ div {
     @include flexCenter;
     flex-direction: column;
   }
+
   #projectInfoMockup {
     height: 100vh;
     width: 100%;
@@ -71,11 +72,13 @@ div {
     border-radius: 10px;
     background: $workBackground;
   }
+
   #projectDescription {
     height: auto;
     padding: 1.5em;
     max-width: 1660px;
   }
+
   .cta-container {
     @include flexCenter;
     flex-direction: row;
